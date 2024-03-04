@@ -19,6 +19,14 @@ body {
     padding: 36px;
 }
 
+.header h1 {
+    margin-top: -30px;
+}
+
+.header p {
+    margin-top: 20px;
+}
+
 .HeaderDesc {
     color: #D7434F;
     text-align: center;
@@ -61,6 +69,16 @@ body {
     grid-gap: 20px;
     position: relative;
     display: flex;
+  }
+
+  .main h2 {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  .main h5 {
+    font-weight: bold;
+    font-size: 15px;
   }
 
  .side {
@@ -115,7 +133,7 @@ body {
 
  .toursnews a {
     margin: 0;
-    line-height: 0; /* Centramos verticalmente el texto */
+    line-height: 43px; /* Centramos verticalmente el texto */
     color: white;
     font-weight: bold;
  }
@@ -135,27 +153,67 @@ body {
  }
 
   .article img {
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 500px;
     display: block;
     margin: 0 auto; /* Esto centra horizontalmente la imagen */
   }
 
- .footer {
-    height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+  .footer {
+    display: flex;
+    background-image: url(img/footer.jpg);
+    height: 70px;
     width: 100%;
-    text-align: center;
-    background-color: #9B847B;
-    background-image: url('img/footer.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    bottom: 0;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer h2 {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 63px; /* Centramos verticalmente el texto */
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
- }
+    display: flex;
+    text-align: center;
+}
 
+ @media screen and (max-width: 768px) {
+/* Navbar */
+.navbar {
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 1px;
+}
 
+.navbar a {
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+}
 
+/* Main */
+.main {
+    flex-direction: column; /* Apilar elementos verticalmente */
+}
 
+.side, .article {
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 0; /* Quitar margen izquierdo */
+    margin-right: 0; /* Quitar margen derecho */
+}
+
+/* Imágenes */
+.fakeimg img, .article img {
+    width: 100%; /* Hacer que las imágenes ocupen todo el ancho del contenedor */
+}
+
+/* Footer */
+.footer {
+    background-size: contain; /* Ajustar tamaño de la imagen de fondo */
+}
+}
  
 
  
