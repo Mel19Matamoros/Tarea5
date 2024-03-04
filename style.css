@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: #2962A7;
+    background-image: url('img/wallpaper2.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 895px;
+    background-position-x: 0px; /* Ajusta la posición horizontal de la imagen de fondo */
+    background-position-y: -3px; /* Ajusta la posición vertical de la imagen de fondo */
+    height: 303px;
+    width: 100%;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 36px;
+}
+
+.HeaderDesc {
+    color: #D7434F;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #BBACAF;
+    text-align: left;
+    height: 50px; /* Ajusta la altura según sea necesario */
+    line-height: 12px; /* Iguala la altura del texto verticalmente */
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    /*vertical-align: middle; Alinea verticalmente el texto */
+}
+
+.navbar ul li a:hover {
+    background-color: #DAD4E0;
+    color: #58699d;
+}
+
+.main{
+    grid-template-columns: repeat(12, lfr);
+    grid-gap: 20px;
+    position: relative;
+    display: flex;
+  }
+
+ .side {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección principal del 
+    contenedor flexible como columna --> Los elementos secundarios se apilarán verticalmente */
+    margin-top: 0;
+    margin-left: 25px;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ h2 {
+    color: #385072;
+    font-weight: bold;
+ }
+
+ h5 {
+    color: #CB384B;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ .fakeimg img {
+    border: 6px solid #BBACAF;
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    margin-bottom: 20px;
+ }
+
+ .toursnews{
+    width: 100%;
+    background-color: #BBACAF;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+ }
+
+ .toursnews img {
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    margin-right: 10px;
+    float: left;
+ }
+
+ .toursnews a {
+    margin: 0;
+    line-height: 0; /* Centramos verticalmente el texto */
+    color: white;
+    font-weight: bold;
+ }
+   
+ .article {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%; /* El 70% restante del ancho de la pantalla */
+    float: left; /* Alinear a la izquierda */
+    margin-left: 40px; /* Ajustar el margen izquierdo para separarlo del .side */ 
+    padding-left: 40px; /* Ajustar el padding izquierdo para separarlo del borde */
+    border-left: 4px solid #BBACAF; /* Borde izquierdo de color #BBACAF */
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column; 
+    text-align: justify;
+    margin-right: 40px;
+ }
+
+  .article img {
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente la imagen */
+  }
+
+ .footer {
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: #9B847B;
+    background-image: url('img/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+ }
+
+
+
+
+ 
+
+ 
+
+ 
+  
+  
